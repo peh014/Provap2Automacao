@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Carro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        label {
+            margin-top: 10px;
+            color: #495057;
+        }
+
+        button {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="mt-3">ALUGUEL DE CARRO</h2>
+        <form>
+            <div class="mb-3">
+                <label for="clienteNome" class="form-label">NOME DO CLIENTE:</label>
+                <input type="text" class="form-control" id="clienteNome" placeholder="Nome do Cliente">
+            </div>
+            <div class="mb-3">
+                <label for="carroNome" class="form-label">NOME DO CARRO:</label>
+                <input type="text" class="form-control" id="carroNome" placeholder="Nome do Carro">
+            </div>
+            <div class="mb-3">
+                <label for="dtaluguel" class="form-label">DATA DE ALUGUEL:</label>
+                <input type="date" class="form-control" id="dtaluguel">
+            </div>
+            <div class="mb-3">
+                <label for="dtdevolucao" class="form-label">DATA DE DEVOLUÇÃO:</label>
+                <input type="date" class="form-control" id="dtdevolucao">
+            </div>
+            <div class="mb-3">
+                <label for="valoraluguel" class="form-label">VALOR DO ALUGUEL:</label>
+                <input type="text" class="form-control" id="valoraluguel" placeholder="Valor do Aluguel">
+            </div>
+            <button type="button" class="btn btn-success" onclick="addAluguel()">Adicionar </button>
+            <button type="button" class="btn btn-success" onclick="viewAlugueis()">Visualizar </button>
+            <button type="button" class="btn btn-danger" onclick="deleteAluguel()">Excluir </button>
+            <button type="button" class="btn btn-dark" onclick="updateAluguel()">Atualizar </button>
+        </form>
+    </div>
+
+    <script src="aluguel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
